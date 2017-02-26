@@ -9,7 +9,7 @@ package cola.fifo;
  *
  * @author Alex
  */
-public class ColaFIFO {
+public class Main {
 
     /**
      * @param args the command line arguments
