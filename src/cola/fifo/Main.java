@@ -16,7 +16,11 @@ public class Main {
      */
     public static void main(String[] args) {
         Cola fifo = new Cola();
-            
+        
+        fifo.offer("hola");
+        System.out.println(fifo.peek());
+        System.out.println(fifo.poli());
+        
     }
     
 }

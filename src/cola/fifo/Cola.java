@@ -12,6 +12,7 @@ import java.util.ArrayList;
  * @author Alex
  * Se basa en primero q entra primero que sale
  *GUIA: https://www.youtube.com/watch?v=jUNcDIJ0S_k
+ * Alexuser09
  * 
  */
 public class Cola {
@@ -23,12 +24,12 @@ public class Cola {
     
     
     
-    public void offer(){
-    fifo.add(0);
+    public void offer(Object o){
+    fifo.add(o);
     }
     
     public Object peek(){
-        if (!(fifo.isEmpty())) {
+        if ((fifo.isEmpty())) {
             return fifo.get(0);
         }else{
             return null;
@@ -45,6 +46,5 @@ public class Cola {
             return null;
         }
     }
-    
     
 }
