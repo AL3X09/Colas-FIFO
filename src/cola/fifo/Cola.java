@@ -23,26 +23,28 @@ public class Cola {
     }
     
     
-    
+    //recive proceso
     public void offer(Object o){
     fifo.add(o);
     }
-    
+    //ejecuta proceso
     public Object peek(){
         if ((fifo.isEmpty())) {
             return fifo.get(0);
         }else{
-            return null;
+            String msg="Atendiendo";
+            return msg;
         }
     }
-    
+    // termina el proceso
     public Object poli(){
         
         if (!(fifo.isEmpty())) {
             Object o = fifo.get(0);
             fifo.remove(0);
-            return o;
+            return "Finalizando  "+o;
         }else{
+            
             return null;
         }
     }
